@@ -10,3 +10,150 @@ html {
     background-attachment: fixed;
     background-size: cover;
 }
+
+/* Default Styles */
+
+.color {
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    border: 1px solid white;
+}
+
+.corr {
+    height: 15px;
+    width: 15px;
+    background-color: grey;
+    border: 1px solid white;
+    border-radius: 7.5px;
+}
+
+body {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 80px 20px auto 100px 100px;
+    align-content: center;
+    justify-content: center;
+}
+
+/* Header Styles */
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header h1 {
+    margin-left: 32px;
+    margin-right: 14px;
+    text-decoration: underline;
+}
+
+/* Main Styles */
+
+section {
+    display: grid;
+    grid-template-columns: 45px 203px 47px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1px;
+    /* border: 2px solid black; */
+}
+
+.colors {
+    display: flex;
+    gap: 1px;
+}
+
+.correct {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 15px;
+    gap: 1px;
+}
+
+/* Guess Styles */
+
+section.guess {
+    grid-template-columns: 100px 203px 100px;
+}
+
+.guessingButtons {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+}
+
+.guessingButtons button {
+    width: 75px;
+    background-color: lightblue;
+    border-radius: .5rem;
+    /* Makes it so that when you click on the button there isn't a outline ariund the button */
+    outline: none;
+}
+
+/* Color Button Styles */
+
+.colorButtons {
+    display: flex;
+    align-self: start;
+    gap: 1px;
+}
+
+.colorButtons .colors div.color:active {
+    box-shadow: inset .5px .5px 1px white;
+}
+
+/* Color Styles */
+
+.color {
+    background: radial-gradient(circle at 30% 30%, lightblue, #000);
+}
+
+.corr {
+    background: radial-gradient(circle at 30% 30%, lightgrey, #000);
+}
+
+/* colors players can pick */
+
+.red {
+    background: radial-gradient(circle at 30% 30%, #ffb0b0, #ff0000, #000);
+}
+
+.orange {
+    background: radial-gradient(circle at 30% 30%, #ffc59f, #ED553B, #000);
+}
+
+.yellow {
+    background: radial-gradient(circle at 30% 30%, #fff2c5, #F6D55C, #000);
+}
+
+.lightgreen {
+    background: radial-gradient(circle at 30% 30%, #e0fffc, #3CAEA3, #000);
+}
+
+.blue {
+    background: radial-gradient(circle at 30% 30%, #88c1f0, #20639B, #000);
+}
+
+.darkblue {
+    background: radial-gradient(circle at 30% 30%, #80b1da, #173F5F, #000);
+}
+
+.pink {
+    background: radial-gradient(circle at 30% 30%, #ffeeee, #ffb0b0, #000);
+}
+
+/*  */
+
+.white {
+    background: radial-gradient(circle at 30% 30%, #FFFFFF, rgb(235, 235, 235), #000);
+}
+
+.black {
+    background: radial-gradient(circle at 30% 30%, #FFFFFF, #000, #000);
+}
